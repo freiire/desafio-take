@@ -2,7 +2,7 @@ import Express from "express";
 import axios from 'axios'
 const app = Express();
 
-app.get("/", (req, res) => {
+app.get("/repos", (req, res) => {
     axios
       .get("https://api.github.com/users/takenet/repos", {
           params: {
